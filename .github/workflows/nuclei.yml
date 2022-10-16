@@ -14,8 +14,8 @@ jobs:
       - name: Nuclei - Vulnerability Scan
         uses: projectdiscovery/nuclei-action@main
         with:
-          urls: urls.txt
-           templates: /home/runner/nuclei-templates/cves
+         urls: urls.txt
+         templates: /home/runner/nuclei-templates/cves/
 
       - name: GitHub Workflow artifacts
         uses: actions/upload-artifact@v2
