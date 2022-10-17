@@ -15,7 +15,7 @@ jobs:
         uses: projectdiscovery/nuclei-action@main
         with:
          target: https://unibet.com
-         templates: /home/runner/nuclei-templates/cves/
+         
 
       - name: GitHub Workflow artifacts
         uses: actions/upload-artifact@v2
