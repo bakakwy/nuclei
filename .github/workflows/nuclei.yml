@@ -14,7 +14,7 @@ jobs:
       - name: Nuclei - Vulnerability Scan
         uses: projectdiscovery/nuclei-action@main
         with:
-         urls: urls.txt
+         target: https://unibet.com
          templates: /home/runner/nuclei-templates/cves/
 
       - name: GitHub Workflow artifacts
